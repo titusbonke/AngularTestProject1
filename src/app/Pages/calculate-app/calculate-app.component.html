@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 style="color: red;">Calculation App</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h1>{{Count}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <div class="input-group mb-3">
+                    <input class="form-control text-center" type="number" id="name" #nameInput
+                        [(ngModel)]="CalculationNumber" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col text-center">
+            <button class="btn btn-primary" type="button" (click)="calculate(Count+CalculationNumber)">Add Button</button>
+        </div>
+        <div class="col text-center">
+            <button class="btn btn-primary" type="button" (click)="calculate(Count-CalculationNumber)">Sub Button</button>
+        </div>
+        <div class="col text-center">
+            <button class="btn btn-primary" type="button" (click)="calculate(Count*CalculationNumber)">Mul Button</button>
+        </div>
+        <div class="col text-center">
+            <button class="btn btn-primary" type="button" (click)="calculate(Count/CalculationNumber)">Div Button</button>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
